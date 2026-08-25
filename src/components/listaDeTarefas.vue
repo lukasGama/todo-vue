@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <ul class="list-group mt-4" >
+    <ul class="list-group mt-4">
         <li class="list-group-item" v-for="tarefa in props.tarefas"><!--usando a diretiva-->
             <input @change="evento => tarefa.finalizada = evento.target.checked" :checked="tarefa.finalizada"
                 :id="tarefa.titulo" type="checkbox"><!--Ultilizando o biden, começa com os dois pontos-->
